@@ -7,8 +7,8 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class HomePage {
 
-    // No good selector option for this element are present. Should be addressed to the fe team.
-//    private static final SelenideElement travelLink = $x("//a[.=' Ceļojumi ']");
+//  No good selector option for this element are present. Should be addressed to the fe team.
+//  private static final SelenideElement travelLink = $x("//a[.=' Ceļojumi ']");
     private static final SelenideElement travelLink = $(".quick-menu-btn:nth-child(2)");
 
     public HomePage() {
