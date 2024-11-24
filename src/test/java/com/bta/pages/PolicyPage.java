@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
 public class PolicyPage {
-//
+
     private static final SelenideElement
         continueWithOptimalButton = $("[datatype='selectPolicyPlanOPTIMAL']");
 

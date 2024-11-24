@@ -47,7 +47,7 @@ public class TravelPage {
                 .click();
         destinationInput.shouldHave(text("Worldwide"));
 
-        return new TravelPage();
+        return this;
     }
 
     public TravelPage applyWithHighRiskActivities() {
@@ -59,7 +59,7 @@ public class TravelPage {
                 .click();
         activitiesInput.shouldHave(text("With High-Risk Activities"));
 
-        return new TravelPage();
+        return this;
     }
 
     public PolicyPage navigateToPolicyPricingPage() {
