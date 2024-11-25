@@ -18,6 +18,8 @@ public class AdditionalOptionsPage extends PageBase {
     private static final SelenideElement
         header = $(".header h2"),
         extraCoverForm = $(".travel-insurance-option"),
+        paymentInfoField = $(".payment-info"),
+        insurancePlanField = $("#insurance-plan-item-0"),
         sumField = $(".sum"),
         editButton = $("#additional-options section button"),
         insuranceSumInput = $("#deductible-open"),
@@ -37,6 +39,8 @@ public class AdditionalOptionsPage extends PageBase {
     public AdditionalOptionsPage verifyForms() {
         header.shouldHave(text("Vēlies pievienot papildu aizsardzību?"));
         extraCoverForm.shouldBe(visible.because("Extra Cover Form should be visible"));
+        paymentInfoField.shouldBe(visible.because("Payment Info Field should be visible"));
+        insurancePlanField.shouldBe(visible.because("Insurance Plan Field should be visible"));
 
         return this;
     }
