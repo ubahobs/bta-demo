@@ -1,13 +1,17 @@
 package com.bta.pages;
 
+import com.bta.base.PageBase;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.testng.Assert;
+
+import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
-public class AdditionalOptionsPage {
+public class AdditionalOptionsPage extends PageBase {
 
     private float totalSum;
 
@@ -22,12 +26,14 @@ public class AdditionalOptionsPage {
         continueButton = $("#insurance-plan-widget button");
 
     public AdditionalOptionsPage() {
-        header.shouldBe(visible.because("Additional Page should be loaded"));
+        super();
+        header.shouldBe(visible.because("Additional Page should be loaded"), Duration.ofMillis(timeout));
         this.totalSum = Float.parseFloat(sumField
                 .shouldBe(visible.because("Total Sum should be visible"))
                 .getText());
     }
 
+    @Step
     public AdditionalOptionsPage verifyForms() {
         header.shouldHave(text("Vēlies pievienot papildu aizsardzību?"));
         extraCoverForm.shouldBe(visible.because("Extra Cover Form should be visible"));
@@ -35,6 +41,7 @@ public class AdditionalOptionsPage {
         return this;
     }
 
+    @Step
     public AdditionalOptionsPage changeInsuranceSum() {
         editButton
                 .shouldBe(visible.because("Edit Button should be visible"))
@@ -55,6 +62,7 @@ public class AdditionalOptionsPage {
         return this;
     }
 
+    @Step
     public TravellersDataPage navigateToTravellerPage() {
         continueButton
                 .shouldBe(visible.because("Continue Button should be visible"))

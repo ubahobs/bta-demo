@@ -9,7 +9,7 @@ public class Config {
 
     static {
         properties = new Properties();
-        String path = "src/test/resources/project.properties";
+        String path = "src/test/resources/test-config/project.properties";
         try (FileInputStream fis = new FileInputStream(path)) {
             properties.load(fis);
         } catch (IOException e) {

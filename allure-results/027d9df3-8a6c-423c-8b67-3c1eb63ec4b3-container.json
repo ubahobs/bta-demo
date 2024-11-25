@@ -1,0 +1,1 @@
+{"uuid":"027d9df3-8a6c-423c-8b67-3c1eb63ec4b3","name":"com.bta.tests.TravelInsuranceTest","children":["017c41db-ed1c-4a1f-9413-e7d32caf6eb9"],"befores":[],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1732549602379,"stop":1732549602550}],"start":1732549577201,"stop":1732549602570}
