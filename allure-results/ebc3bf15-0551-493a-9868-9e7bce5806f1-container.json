@@ -1,1 +1,0 @@
-{"uuid":"ebc3bf15-0551-493a-9868-9e7bce5806f1","name":"com.bta.base.TestBase.setUp","children":["017c41db-ed1c-4a1f-9413-e7d32caf6eb9"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1732549577213,"stop":1732549577220}],"afters":[],"start":1732549577213,"stop":1732549577220}
